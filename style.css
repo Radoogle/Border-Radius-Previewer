@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+}
+#box {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
+#css-text {
+  position: relative;
+  left: 20px;
+  top: 120px;
+}
