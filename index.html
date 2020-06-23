@@ -8,9 +8,18 @@
   <title>Border Radius Previewer</title>
 </head>
 <body>
-  <h1>Border Radius Previewer</h1>
-  <div id="box">
-    <p id="css-text"><code>border-radius: 100% 100% 100% 100%</code></p>
+  <h1 id="title">Border Radius Previewer</h1>
+  <div class="container">
+    <div id="box"></div>
+    <input type="number" oninput="updateBox()" id="TL" class="corner TL" value="0" min="0" step="1"></input>
+    <input type="checkbox" onchange="checkAll()" id="ALL" ></input>
+    <label for="ALL">All</label>
+    <input type="number" oninput="updateBox()" id="TR" class="corner TR" value="0" min="0" step="1"></input>
+    <input type="number" oninput="updateBox()" id="BR" class="corner BR" value="0" min="0" step="1"></input>
+    <input type="number" oninput="updateBox()" id="BL" class="corner BL" value="0" min="0" step="1"></input>
+    <textarea name="css-text" id="TA" cols="50" rows="6"></textarea>
   </div>
+  
+  <script src="app.js"></script>
 </body>
 </html>
