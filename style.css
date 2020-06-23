@@ -34,6 +34,8 @@ label {
 }
 .container {
   position: relative;
+  width: 1000px;
+  margin: auto;
 }
 #TL {
   top: 0px;
