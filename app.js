@@ -26,3 +26,21 @@ function checkAll() {
     updateBox();
   }
 }
+
+function clipboard() {
+  if (TA.value) {
+    /* Select the text field */
+    TA.select();
+    TA.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    alert(`The text: 
+
+${TA.value}
+
+ has been copied to clipboard!`);
+  }
+}
