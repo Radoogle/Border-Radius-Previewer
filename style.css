@@ -16,5 +16,55 @@ h1#title {
   width: 400px;
   height: 400px;
   margin: auto;
+  background-color: blueviolet;
 }
-
+input, textarea {
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: rgb(229, 226, 226);
+}
+label {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 10px;
+}
+.corner {
+  width: calc(1.2em * 4);
+  position: absolute;
+}
+.container {
+  position: relative;
+}
+#TL {
+  top: 0px;
+  left: 200px;
+}
+#TR {
+  top: 0px;
+  right: 200px;
+}
+#BL {
+  bottom: 150px;
+  left: 200px;
+}
+#BR {
+  bottom: 150px;
+  right: 200px;
+}
+#ALL {
+  transform: scale(2);
+  margin-left: 10px;
+}
+#TA {
+  display: block;
+  margin: 20px auto 0px;
+}
+.fixed {
+  position: absolute;
+  top: 60px;
+  left: 210px;
+}
+#all-label {
+  top: 45px;
+  left: 240px;
+}
